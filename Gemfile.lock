@@ -1,0 +1,57 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (7.0.4.3)
+      activesupport (= 7.0.4.3)
+    activerecord (7.0.4.3)
+      activemodel (= 7.0.4.3)
+      activesupport (= 7.0.4.3)
+    activesupport (7.0.4.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.2.2)
+    e2mmap (0.1.0)
+    faker (3.2.0)
+      i18n (>= 1.8.11, < 2)
+    google-protobuf (3.22.3)
+    googleapis-common-protos-types (1.6.0)
+      google-protobuf (~> 3.14)
+    grpc (1.54.0)
+      google-protobuf (~> 3.21)
+      googleapis-common-protos-types (~> 1.0)
+    grpc-tools (1.54.0)
+    gruf (2.17.0)
+      activesupport (> 4)
+      concurrent-ruby (> 1)
+      e2mmap (>= 0.1)
+      grpc (~> 1.10)
+      grpc-tools (~> 1.10)
+      json (>= 2.3)
+      slop (>= 4.6)
+      thwait (>= 0.1)
+      zeitwerk (>= 2)
+    i18n (1.13.0)
+      concurrent-ruby (~> 1.0)
+    json (2.6.3)
+    minitest (5.18.0)
+    slop (4.10.1)
+    thwait (0.2.0)
+      e2mmap
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  faker
+  grpc
+  grpc-tools
+  gruf
+
+BUNDLED WITH
+   2.1.2

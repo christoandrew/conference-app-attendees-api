@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: attendees-api-deployment
+  labels:
+    app: attendees_api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: attendees_api
+  template:
+    metadata:
+      labels:
+        app: attendees_api
+    spec:
+      containers:
+        - name: attendees-api
+          imagePullPolicy: IfNotPresent
+          image: christoandrew/attendees_api
+          ports:
+            - containerPort: 50051
+            
+          
+
+
